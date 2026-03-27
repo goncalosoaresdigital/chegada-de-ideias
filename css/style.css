@@ -630,6 +630,7 @@ h3 { font-size: 1.25rem; }
 .contact-card {
   text-align: center;
   padding: 40px 28px;
+  background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -822,7 +823,8 @@ h3 { font-size: 1.25rem; }
 
   .contact-cards {
     grid-template-columns: 1fr;
-    max-width: 360px;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .about-stats {
