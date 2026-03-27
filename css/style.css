@@ -606,96 +606,6 @@ h3 { font-size: 1.25rem; }
   display: block;
 }
 
-/* --- Team --- */
-.team {
-  padding: var(--section-padding);
-  background: var(--gray-100);
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.team-card {
-  background: var(--white);
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.team-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-}
-
-.team-avatar {
-  width: 100%;
-  aspect-ratio: 4/3;
-  background: var(--gray-200);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.team-avatar .initials {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--gray-400);
-  letter-spacing: 2px;
-}
-
-.team-info {
-  padding: 28px;
-}
-
-.team-info h3 {
-  font-size: 1.15rem;
-  margin-bottom: 4px;
-}
-
-.team-info .role {
-  font-size: 0.85rem;
-  color: var(--red);
-  font-weight: 500;
-  margin-bottom: 16px;
-  display: block;
-}
-
-.team-info p {
-  font-size: 0.88rem;
-  color: var(--gray-700);
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.team-contact {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.team-contact a {
-  font-size: 0.82rem;
-  color: var(--gray-400);
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.team-contact a:hover {
-  color: var(--red);
-}
-
-.team-contact svg {
-  width: 14px;
-  height: 14px;
   stroke: currentColor;
   fill: none;
   stroke-width: 2;
@@ -909,10 +819,6 @@ h3 { font-size: 1.25rem; }
     flex-wrap: wrap;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-  }
 
   .contact-cards {
     grid-template-columns: 1fr;
