@@ -616,7 +616,7 @@ h3 { font-size: 1.25rem; }
 /* --- Contact --- */
 .contact {
   padding: var(--section-padding);
-  background: var(--white);
+  background: var(--gray-100);
 }
 
 .contact-cards {
