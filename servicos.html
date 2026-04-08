@@ -291,6 +291,17 @@
     </div>
   </footer>
 
+  <!-- ====== COOKIE BANNER ====== -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="container">
+      <p>Este site utiliza cookies para melhorar a sua experiência de navegação. Ao continuar, concorda com a nossa <a href="#">Política de Cookies</a>.</p>
+      <div class="cookie-buttons">
+        <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Aceitar</button>
+        <button class="cookie-btn cookie-btn-reject" id="cookieReject">Rejeitar</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Mobile menu
     const toggle = document.querySelector('.nav-toggle');
@@ -319,6 +330,16 @@
       });
     }, { threshold: 0.15 });
     reveals.forEach(el => revealObserver.observe(el));
+
+    // Cookie consent
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieReject = document.getElementById('cookieReject');
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+      setTimeout(() => cookieBanner.classList.add('visible'), 800);
+    }
+    if (cookieAccept) cookieAccept.addEventListener('click', () => { localStorage.setItem('cookieConsent', 'accepted'); cookieBanner.classList.remove('visible'); });
+    if (cookieReject) cookieReject.addEventListener('click', () => { localStorage.setItem('cookieConsent', 'rejected'); cookieBanner.classList.remove('visible'); });
 
     // Accordion
     document.querySelectorAll('.accordion-header').forEach(btn => {
