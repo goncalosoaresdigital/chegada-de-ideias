@@ -755,6 +755,83 @@ h3 { font-size: 1.25rem; }
   color: var(--white);
 }
 
+/* --- Privacy Page --- */
+.privacy-content {
+  padding: 80px 0 100px;
+}
+
+.privacy-body {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.privacy-intro {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 32px;
+}
+
+.privacy-body p {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.privacy-body h2 {
+  font-size: 1.3rem;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  color: var(--dark);
+  position: relative;
+  padding-left: 20px;
+}
+
+.privacy-body h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 4px;
+  height: 22px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.privacy-body h2:nth-of-type(even)::before {
+  background: var(--blue);
+}
+
+.privacy-body ol {
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.privacy-body ol li {
+  font-size: 1.05rem;
+  color: var(--gray-700);
+  line-height: 1.85;
+  margin-bottom: 8px;
+  list-style: decimal;
+}
+
+.privacy-body a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy-body a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  .privacy-content {
+    padding: 48px 0 72px;
+  }
+}
+
 /* --- Animations (scroll reveal) --- */
 .reveal {
   opacity: 0;
