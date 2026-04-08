@@ -215,6 +215,7 @@ h3 { font-size: 1.25rem; }
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 100px;
   background: var(--white);
   position: relative;
   overflow: hidden;
@@ -740,6 +741,18 @@ h3 { font-size: 1.25rem; }
   justify-content: space-between;
   align-items: center;
   font-size: 0.82rem;
+}
+
+.footer-reclamacoes {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray-400);
+  transition: color 0.2s;
+}
+
+.footer-reclamacoes:hover {
+  color: var(--white);
 }
 
 /* --- Animations (scroll reveal) --- */
